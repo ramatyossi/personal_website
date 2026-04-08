@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spoken, not read | Yossi Nachemi</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header>
+    <a class="site-logo" href="../index.html">Yossi Nachemi</a>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="../media_from_wix/Yossi%20Nachemi%20CV.pdf" target="_blank">Work history</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../talks.html">Talks</a>
+      <a href="../fun-stuff.html">Fun stuff</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-detail">
+
+      <div class="project-sidebar">
+        <h1>Spoken,<br>not read</h1>
+        <p class="tldr"><strong>tl;dr –</strong> Going beyond the traditional "Turn right, turn left," I developed a framework for driving directions that emphasizes safety and clarity.</p>
+        <p class="fact"><strong>One surprising fact:</strong> When something spoken is repeated it can take on a new meaning the writer didn't anticipate.</p>
+      </div>
+
+      <div class="project-content">
+
+        <h2>Background</h2>
+        <p>Spoken driving directions seem obvious, like, "Turn left, turn right," etc.</p>
+        <p>But when the time came to add new spoken directions to Waze, I created a framework for how to write for audio commands.</p>
+
+        <h2>Research</h2>
+        <p>Surprisingly, there wasn't a lot of research done on voice driving instructions. Instead I focused on three main areas:</p>
+        <ul>
+          <li>validating our current system</li>
+          <li>how voice assistants interrupt people and provide useful information</li>
+          <li>how driving can affect comprehension</li>
+        </ul>
+
+        <h2>Solution</h2>
+        <p>In the end, our guidelines focused on:</p>
+        <ul>
+          <li>Putting most important info at the end</li>
+          <li>Not repeating unnecessary info</li>
+        </ul>
+
+        <p><em>Why put the most important info at the end?</em><br>
+        Because there's lots of noise while driving: music, traffic, kids screaming in the back seat. Drivers aren't always going to hear the first words spoken to them.</p>
+
+        <p>Instead of saying, "Turn right in 1000 feet," we say, "In 1000 feet, turn right." This way, if the driver misses the first part of the sentence, they're more likely to hear the most important part: <strong><em>turn right</em></strong>.</p>
+
+        <p><em>Why shouldn't you repeat things?</em><br>
+        On a message about a hazard on the road, we added a "drive safe" at the end. "Hazard reported ahead — drive safe."</p>
+
+        <p>But when drivers got 3 or 4 hazards in a short timespan, drivers gave us feedback that the "drive safe" started to feel like we were mocking them.</p>
+
+        <h3>Why does this framework matter?</h3>
+        <p>Adding voice directions doesn't happen too often, but they are very important to the user experience. So creating a framework ensures writers know best practices and drivers get information that's worth listening to.</p>
+
+      </div>
+    </div>
+
+    <a class="back-btn" href="../projects.html">Back to Projects</a>
+  </main>
+
+  <footer>
+    <a class="linkedin-link" href="https://www.linkedin.com/in/yossinachemi" target="_blank" rel="noopener">in</a>
+    <p class="copyright">Copyright 2025 Yossi Nachemi</p>
+  </footer>
+
+</body>
+</html>

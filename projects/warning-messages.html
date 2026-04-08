@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warning messages | Yossi Nachemi</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header>
+    <a class="site-logo" href="../index.html">Yossi Nachemi</a>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="../media_from_wix/Yossi%20Nachemi%20CV.pdf" target="_blank">Work history</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../talks.html">Talks</a>
+      <a href="../fun-stuff.html">Fun stuff</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-detail">
+
+      <div class="project-sidebar">
+        <h1>Warning messages</h1>
+        <p class="tldr"><strong>tl;dr –</strong> Know your product's theme and find areas to hammer that message home.</p>
+      </div>
+
+      <div class="project-content">
+
+        <h2>Background</h2>
+        <p>Waze is a driving app, whose goal is to find the best route for drivers using real-time traffic data. So when some bright red text appeared on screen — it seemed like a bad thing.</p>
+        <p>Only it wasn't.</p>
+        <p>There were a lot of these messages that simply were added to give some feedback to the developers.</p>
+        <p>For example, when someone changed the voice they wanted to hear driving directions, this message would appear on the screen.</p>
+
+        <img src="../media_from_wix/New_prompts_error.jpg" alt="Waze: Downloading new prompts: 44%" />
+
+        <p>What does this even mean? Aside from using language <strong><em>no one uses</em></strong> <em>in their everyday life</em>, the red font color and the percentage countdown made drivers think they needed to wait for this to complete before the app would work.</p>
+        <p><em>(Spoiler: they didn't — voice directions would still work even if the download hadn't completed.)</em></p>
+
+        <h2>Solution</h2>
+        <p>After running an audit, I found a series of system messages that didn't impact the user experience, but were completely confusing.</p>
+        <p>Instead of trying to convince the engineering team to remove these messages, I saw it was an opportunity to remind drivers of the benefits of Waze.</p>
+        <p>So whenever the app needed to do something technical that didn't impact, I created a list of messages to replace the old technical message with a new benefit-driven message.</p>
+        <p>The result was now a series of messages that reinforce Waze's key differentiators. So instead of worrying drivers, now there are messages reassuring drivers that Waze is working for them.</p>
+
+        <img src="../media_from_wix/Screenshot_20220619-152117.png" alt="Waze: Updating traffic info: 34%" />
+
+      </div>
+    </div>
+
+    <a class="back-btn" href="../projects.html">Back to Projects</a>
+  </main>
+
+  <footer>
+    <a class="linkedin-link" href="https://www.linkedin.com/in/yossinachemi" target="_blank" rel="noopener">in</a>
+    <p class="copyright">Copyright 2025 Yossi Nachemi</p>
+  </footer>
+
+</body>
+</html>

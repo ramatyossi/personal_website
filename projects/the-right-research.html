@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The right research | Yossi Nachemi</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header>
+    <a class="site-logo" href="../index.html">Yossi Nachemi</a>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="../media_from_wix/Yossi%20Nachemi%20CV.pdf" target="_blank">Work history</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../talks.html">Talks</a>
+      <a href="../fun-stuff.html">Fun stuff</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-detail">
+
+      <div class="project-sidebar">
+        <h1>The right<br>research</h1>
+        <p class="tldr"><strong>tl;dr –</strong> At Google I created a script that analyzes large amounts of text and shows relevant stats. This lets other writers quickly analyze text for research, auditing, and more.</p>
+      </div>
+
+      <div class="project-content">
+
+        <h2>Background</h2>
+        <p>Waze is a driving app that lets drivers tell other drivers about hazards on the road, like traffic jams, crashes, construction and more.</p>
+        <p>When it came time to redesign how drivers report these road hazards, we wanted to validate and explore the terminology around these reports.</p>
+        <p>But how could we tell if the labels we wanted to use were actually how people speak about traffic and traffic-related incidents?</p>
+
+        <h2>Research</h2>
+        <p>After going to the usual sources like Google Trends, landscape analysis, and past iterations, I found myself listening again to radio traffic reports from my hometown of Chicago.</p>
+        <p>I briefly thought about transcribing the broadcast until I remembered the Internet Archive had a whole catalogue of already transcribed radio broadcasts.</p>
+
+        <h2>Solution</h2>
+        <p>I created a python script to analyze the transcripts for frequency data. Analyzing tens of thousands of words in the traffic reports, I was able to understand the terminology used in our key markets.</p>
+        <p>Aside from raw data, I also created word cloud visualizations (like the picture below) so people could quickly understand the results.</p>
+
+        <img src="../media_from_wix/signal-2021-09-25-133317%20(5).png" alt="Word cloud visualization of traffic terminology" />
+
+        <h3>Impact of the project:</h3>
+        <p>Besides ensuring the right terminology is being used, this tool allows other UX writers to quickly gain insights into large amounts of text and use it in their everyday work.</p>
+        <p>I also integrated this tool into my larger <a href="ux-writing-scorecards.html">scorecard</a> tool as well.</p>
+
+      </div>
+    </div>
+
+    <a class="back-btn" href="../projects.html">Back to Projects</a>
+  </main>
+
+  <footer>
+    <a class="linkedin-link" href="https://www.linkedin.com/in/yossinachemi" target="_blank" rel="noopener">in</a>
+    <p class="copyright">Copyright 2025 Yossi Nachemi</p>
+  </footer>
+
+</body>
+</html>
