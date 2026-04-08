@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work history | Yossi Nachemi</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .work-history-header {
+      text-align: center;
+      padding: 64px 48px 40px;
+    }
+
+    .work-history-header h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 56px;
+      font-weight: 400;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+    }
+
+    .work-history-header .subtitle {
+      font-size: 15px;
+      color: var(--text-mid);
+      margin-bottom: 12px;
+    }
+
+    .work-history-header .contact-line {
+      font-size: 15px;
+      color: var(--text-mid);
+    }
+
+    .work-history-header .contact-line a {
+      color: var(--text-mid);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .work-history-header .contact-line a:hover {
+      color: var(--text-dark);
+    }
+
+    .pdf-container {
+      max-width: 900px;
+      margin: 0 auto 64px;
+      padding: 0 48px;
+    }
+
+    .pdf-embed {
+      width: 100%;
+      height: 80vh;
+      min-height: 600px;
+      border: none;
+      display: block;
+    }
+
+    .pdf-fallback {
+      display: none;
+      text-align: center;
+      padding: 40px;
+      background: var(--bg-gray);
+      font-size: 14px;
+      color: var(--text-mid);
+    }
+
+    @media (max-width: 768px) {
+      .work-history-header {
+        padding: 40px 24px 28px;
+      }
+
+      .work-history-header h1 {
+        font-size: 40px;
+      }
+
+      .pdf-container {
+        padding: 0 24px;
+      }
+
+      .pdf-embed {
+        height: 60vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="site-logo" href="index.html">Yossi Nachemi</a>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="work-history.html" class="active">Work history</a>
+      <a href="projects.html">Projects</a>
+      <a href="talks.html">Talks</a>
+      <a href="fun-stuff.html">Fun stuff</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="work-history-header">
+      <h1>Work history</h1>
+      <p class="subtitle">Here's a brief overview of my recent work history.</p>
+      <p class="contact-line">Want to find out more? <a href="contact.html">Contact me</a></p>
+    </div>
+
+    <div class="pdf-container">
+      <iframe
+        class="pdf-embed"
+        src="media/Yossi%20Nachemi%20CV.pdf"
+        title="Yossi Nachemi CV"
+      >
+        <p class="pdf-fallback">
+          Your browser can't display PDFs inline.
+          <a href="media/Yossi%20Nachemi%20CV.pdf" target="_blank">Download the CV instead</a>.
+        </p>
+      </iframe>
+    </div>
+  </main>
+
+  <footer>
+    <a class="linkedin-link" href="https://www.linkedin.com/in/yossinachemi" target="_blank" rel="noopener">in</a>
+    <p class="copyright">Copyright 2025 Yossi Nachemi</p>
+  </footer>
+
+</body>
+</html>
