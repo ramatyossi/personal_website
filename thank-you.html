@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanks! | Yossi Nachemi</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .thank-you-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 48px;
+      min-height: 60vh;
+    }
+
+    .thank-you-section h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 48px;
+      font-weight: 400;
+      color: var(--text-dark);
+      margin-bottom: 16px;
+    }
+
+    .thank-you-section p {
+      font-size: 16px;
+      color: var(--text-mid);
+      margin-bottom: 40px;
+    }
+
+    .back-home-btn {
+      display: inline-block;
+      padding: 12px 40px;
+      background: var(--accent);
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .back-home-btn:hover {
+      background: #1aabee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="site-logo" href="index.html">Yossi Nachemi</a>
+    <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="work-history.html">Work history</a>
+      <a href="projects.html">Projects</a>
+      <a href="talks.html">Talks</a>
+      <a href="fun-stuff.html">Fun stuff</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="thank-you-section">
+      <h1>Thanks!</h1>
+      <p>I'll get back to you as soon as possible.</p>
+      <a class="back-home-btn" href="index.html">Back to home</a>
+    </div>
+  </main>
+
+  <footer>
+    <a class="linkedin-link" href="https://www.linkedin.com/in/yossinachemi" target="_blank" rel="noopener">in</a>
+    <p class="copyright">Copyright 2026 Yossi Nachemi</p>
+  </footer>
+
+</body>
+</html>
