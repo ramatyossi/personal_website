@@ -28,12 +28,9 @@
         <h1>Let's chat</h1>
         <p class="contact-subtitle">Questions? Comments? Drop me a line!</p>
 
-        <!--
-          To make this form work on your server, set the action to your form handler endpoint.
-          Example with PHP: action="contact.php" method="POST"
-          Example with Formspree: action="https://formspree.io/f/YOUR_ID" method="POST"
-        -->
-        <form id="contact-form" onsubmit="handleSubmit(event)">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="7c0467f8-1609-464d-9e99-7a53a10af2e1" />
+
           <div class="form-row">
             <div class="form-field">
               <label for="first-name">First Name</label>
@@ -57,8 +54,6 @@
           <div class="form-actions">
             <button type="submit" class="btn-send">Send</button>
           </div>
-
-          <p class="form-success" id="form-success">Thanks for reaching out! I'll be in touch soon.</p>
         </form>
       </div>
     </div>
@@ -69,18 +64,6 @@
     <p class="copyright">Copyright 2025 Yossi Nachemi</p>
   </footer>
 
-  <script>
-    function handleSubmit(e) {
-      // If no real action is set, show a success message client-side.
-      // Replace this function body with nothing once you wire up a real form handler.
-      const form = document.getElementById('contact-form');
-      if (!form.action || form.action === window.location.href) {
-        e.preventDefault();
-        document.getElementById('form-success').style.display = 'block';
-        form.reset();
-      }
-    }
-  </script>
 
 </body>
 </html>
